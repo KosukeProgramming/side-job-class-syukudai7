@@ -1,0 +1,250 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    font-family: 'Times New Roman',sans-serif;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* 以上リセットCSS */
+
+/* 共通 */
+.btn {
+    display: inline-block;
+    width: 350px;
+    line-height: 60px;
+    border-radius: 100vh;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    vertical-align: middle;
+    color: #ffffff;
+    background-color: #F8634F;
+    text-decoration: none;
+}
+.icon {
+    font-size: 10px;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    vertical-align: 2px;
+    color: #F8634F;
+    background-color: #ffffff;
+}
+.fa-flag::before, .fa-download::before {
+    line-height: 25px;
+    padding-left: 1px;
+}
+/********************* 
+* footer
+**********************/
+.footer {
+    position: relative;
+    background-color: #111;
+    background: url('./img/programming_bg.jpg') no-repeat center center / cover;
+    z-index: 1;
+}
+.footer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+.footer__inner {
+    position: relative;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    z-index: 100;
+}
+.footer__item {
+    width: 50%;
+}
+.r-footer__item {
+    padding-left: 50px;
+}
+.l-footer__item {
+    padding-right: 50px;
+    border-right: 1px solid #ffffff;
+}
+.footer__item-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    margin-bottom: 70px;
+}
+.footer__item .footer__item-name:last-child {
+    margin-bottom: 0;
+}
+.footer__item-title {
+    font-weight: 600;
+}
+.footer__item-title-u {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: 'Arial',sans-serif;
+}
+.footer__item-title-d {
+    font-family: YuGothic,'Yu Gothic',sans-serif;
+}
+.footer__item-txt {
+    line-height: 1.5;
+}
+.r-footer__item-btn {
+    text-align: center;
+}
+@media screen and (max-width:1199px) {
+    .footer__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__item {
+        width: 70%;
+        padding: 0;
+    }
+    .footer__item-name {
+        margin-bottom: 50px;
+    }
+    .l-footer__item {
+        border-right: none;
+        border-bottom: 1px solid #ffffff;
+        padding-bottom: 50px;
+    }
+    .r-footer__item {
+        padding-top: 50px;
+    }
+}
+@media screen and (max-width:767px) {
+    .footer__item {
+        width: 350px;
+    }
+    .footer__item-name {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__item-title {
+        margin-bottom: 20px;
+    }
+    .footer__item-title-u {
+        margin-bottom: 10px;
+    }
+    .footer__item-name-contact {
+        margin-bottom: 30px;
+    }
+    .btn {
+        line-height: 50px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:424px) {
+    .footer__item {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}
